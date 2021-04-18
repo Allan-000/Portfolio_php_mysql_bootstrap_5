@@ -1,0 +1,626 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+@font-face{
+    font-family:Knewave-Regular;
+    src: url(fonts/Knewave-Regular.ttf);
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style:oblique;
+    background-image: linear-gradient(to right, #cbecf0, #ddcadd);
+}
+.jumbotron{
+    background-image: url(img/Jumbotron-backgound.jpg);
+    background-size: cover;
+    height: 700px;
+    width: 100%;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background-color:rgba(27, 27, 27, 0.5);
+    border-radius: 22px;
+    padding: 60px;
+    box-shadow: 20px 20px 30px gray;
+    font-size: 1.3em;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.box h2{
+    color: rgb(230, 229, 200);
+    font-size: 1.9em;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+nav{
+    background-color: #1285c7;
+    height: 80px;
+    width: 100%;
+    position:static;
+}
+.brand-logo{
+    height: 60px;
+    border-radius: 12px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+ul{
+    list-style-type: none;
+    float: right;
+}
+ul li{
+    display: inline-block;
+    margin-top:12px;
+    margin-right: 10px;
+    font-size: 1.4em;
+}
+li a{
+    text-decoration: none;
+    padding: 0px 20px 0px 20px;
+    color: rgb(37, 37, 37);
+    width: 20px;
+    transition: 350ms;
+}
+li a:hover, .theme-toggler:hover{
+    cursor: pointer;
+    background-color: white;
+    border-radius: 8px;
+    color: rgb(36, 36, 36);
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.theme-toggler{
+    padding: 8px;
+    border-radius: 12px;
+    background-color: #1285c7;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(34, 34, 34);
+    font-size: 1em;
+    transition: 350ms;
+}
+/*Home page*/
+#home h2{
+    text-align: center;
+    padding: 150px;
+    font-size: 2.5em;
+}
+.home-page-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 6%;
+    padding: 60px 17% 300px 17%;
+}
+.my-photo{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-radius: 50%;
+    box-shadow: 20px 20px 30px gray;
+    height: 490px;
+}
+.home-section-text{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    padding-top: 20%;
+    font-size: 150%;
+}
+/*the studie section styling*/
+.studie-page-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 6%;
+    grid-row-gap: 60px;
+    padding:60px 7% 60px 7%;
+}
+#studie h2{
+    font-size: 2.5em;
+    text-align: center;
+    padding: 200px 0px 200px 0px;
+}
+.studie-photo{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 280px;
+    
+    border-radius: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 15px 15px 15px gray;
+}
+.studie-text{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    font-size: 150%;
+}
+.school-photo{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 280px;
+    width: 500px;
+    border-radius: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 15px 15px 15px gray;
+}
+.school-text{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    font-size: 150%;
+}
+/*Projects section*/
+.projects-page-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 7%;
+    grid-row-gap: 60px;
+    padding:60px 7% 60px 7%;
+}
+.first-project-photo{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 300px;
+    border-radius: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 15px 15px 15px gray;
+}
+.first-project-p{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    font-size: 150%;
+}
+.second-project-photo{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 300px;
+    border-radius: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 15px 15px 15px gray;
+}
+.second-project-p{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    font-size: 150%;
+}
+#projects h2{
+    font-size: 2.5em;
+    text-align: center;
+    padding: 200px 0px 30px 0px;
+}
+#projects p{
+    text-align: center;
+    font-size: 150%;
+}
+/*skills section*/
+#skills h2{
+    font-size: 2.5em;
+    text-align: center;
+    padding: 200px 0px 200px 0px;
+}
+.first-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 10%;
+    grid-row-gap: 40px;
+    padding: 0px 10% 0px 10%;
+}
+.html-logo{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 200px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px grey;
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.html-p{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    font-size: 150%;
+}
+.css-logo{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 200px;
+    border-radius: 80px;
+    box-shadow: 5px 5px 5px grey;
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.css-p{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    font-size: 150%;
+}
+.bootstrap-logo{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    width: 200px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px grey;
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.bootstrap-p{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    font-size: 150%;
+}
+.second-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 10%;
+    grid-row-gap: 40px;
+    padding:60px 7% 60px 7%;
+}
+.c-sharp-logo{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 200px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px grey;
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.c-sharp-p{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    font-size: 150%;
+}
+.javascript-logo{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 200px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px grey;
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.javascript-p{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    font-size: 150%;
+}
+/*contact section*/
+#contact h2{
+    text-align: center;
+    padding:80px 50px 80px 50px;
+    font-size: 2.5em;
+}
+#contact form{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding:0px 140px 0px 140px; */
+}
+.name-label{
+    padding: 20px 0px 20px 0px;
+    font-size: 150%;
+}
+.name-input{
+    width: 700px;
+    height: 27px;
+    font-size: 150%;
+    padding-left: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 6px 6px 30px rgb(155, 155, 155);
+}
+.email-label{
+    padding: 20px 0px 20px 0px;
+    font-size: 150%;
+}
+.email-input{
+    width: 700px;
+    height: 27px;
+    font-size: 150%;
+    padding-left: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 6px 6px 30px rgb(150, 150, 150);
+}
+.topic-label{
+    padding: 20px 0px 20px 0px;
+    font-size: 150%;
+}
+.textarea{
+    width: 1100px;
+    height: 170px;
+    resize: none;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    padding: 20px;
+    font-size: 150%;
+    box-shadow: 6px 6px 30px rgb(150, 150, 150);
+}
+.submit{
+    margin: 20px 0px 20px 0px;
+    padding: 10px;
+    font-size: 150%;
+    border: none;
+    background-color: #1285c7;
+    border-radius: 15px;
+    color: white;
+}
+.submit:hover{
+    cursor: pointer;
+    background-color:#0072b4;
+}
+.contact-links{
+    padding:60px 0px 60px 190px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+}
+.fa-envelope{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: right;
+}
+.fa-facebook-square{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+}
+.fa-whatsapp{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    text-align: left;
+}
+i a{
+    color: black;
+    text-decoration: none;
+}
+/*footer*/
+.footer-bar{
+    border: 0.5px solid gray;
+    background-color: lightgray;
+    height: 50px;
+    width: 99%;
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+}
+.footer-bar p{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 150%;
+}
+/*tablet display styling*/
+@media only screen and (max-width:1085px){
+    .navbar{
+        height: 380px;
+    }
+    ul{
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        padding-right: 40%;
+        flex-direction: column;
+    }
+    ul li{
+        padding: 10px;
+    }
+    .my-photo{
+        height: 350px;
+    }
+    .studie-photo{
+        height: 220px;
+    }
+    .school-photo{
+        height: 220px;
+        width: 410px;
+    }
+    .first-project-photo ,.second-project-photo {
+        height: 250px;
+    }
+    .textarea{
+        width: 1000px;
+    }
+    .contact-links{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        padding-right: 180px;
+    }
+    .fa-envelope{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .fa-facebook-square{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .fa-whatsapp{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+}
+/*mobile display styling*/
+@media only screen and (max-width:800px){
+    .navbar{
+        height: 350px;
+    }
+    ul{
+        padding: 0px;
+        margin:20px 130px 0px 50px;
+    }
+    ul li{
+        padding: 0px;
+    }
+    #home h2{
+        padding: 0px;
+    }
+    .home-page-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding-bottom: 0px;
+    }
+    .my-photo{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .home-section-text{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #studie h2{
+        padding:50px 0px 50px 0px;
+    }
+    .studie-page-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+    }
+    .studie-photo{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .studie-text{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .school-photo{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .school-text{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    #projects h2{
+        padding:50px 0px 50px 0px;
+    }
+    #projects p{
+        padding: 0px 20px 0px 20px;
+    }
+    .projects-page-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+        padding-bottom: 0px;
+    }
+    .first-project-photo{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .first-project-p{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .second-project-photo{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .second-project-p{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    #skills h2{
+        padding:50px 0px 50px 0px;
+    }
+    .first-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .html-logo{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .html-p{
+        grid-column: 1/2;
+        grid-row:2/3;
+    }
+    .css-logo{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .css-p{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .bootstrap-logo{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    .bootstrap-p{
+        grid-column: 1/2;
+        grid-row:6/7;
+    }
+    .second-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(4,1fr);
+    }
+    .c-sharp-logo{
+        grid-column:1/2;
+        grid-row: 1/2;
+    }
+    .c-sharp-p{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .javascript-logo{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .javascript-p{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .name-input , .email-input,.textarea{
+        width: 80%;
+    }
+    .contact-links{
+        padding: 0px;
+    }
+
+
+}
