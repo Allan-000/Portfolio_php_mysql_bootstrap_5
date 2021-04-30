@@ -3,14 +3,22 @@
     padding: 0px;
     scroll-behavior: smooth;
 }
-@font-face{
-    font-family:Knewave-Regular;
-    src: url(fonts/Knewave-Regular.ttf);
-}
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style:oblique;
     background-image: linear-gradient(to right, #cbecf0, #ddcadd);
+    transition: 300ms;
+    
+}
+.themed-body{
+    background-image: linear-gradient(to right,rgb(24, 24, 24) ,rgb(44, 44, 44));
+    transition: 300ms;
+}
+.themed-text{
+    color: white;
+}
+.themed-hr{
+    border:1px solid black;
 }
 .jumbotron{
     background-image: url(img/Jumbotron-backgound.jpg);
@@ -21,6 +29,9 @@ body{
     justify-content: center;
     align-items: center;
 }
+.themed-hr{
+    border:1px solid black;
+}
 .box{
     background-color:rgba(27, 27, 27, 0.5);
     border-radius: 22px;
@@ -30,7 +41,7 @@ body{
     margin-left: 7%;
     margin-right: 7%;
 }
-.box h2{
+.box h1{
     color: rgb(230, 229, 200);
     font-size: 1.9em;
     text-align: center;
@@ -58,6 +69,9 @@ ul li{
     margin-top:12px;
     margin-right: 10px;
     font-size: 1.4em;
+}
+.navbar-toggler{
+    display: none;
 }
 li a{
     text-decoration: none;
@@ -92,6 +106,7 @@ li a:hover, .theme-toggler:hover{
     text-align: center;
     padding: 150px;
     font-size: 2.5em;
+    transition: 300ms;
 }
 .home-page-content{
     display: grid;
@@ -113,6 +128,7 @@ li a:hover, .theme-toggler:hover{
     text-align: center;
     padding-top: 20%;
     font-size: 150%;
+    transition: 300ms;
 }
 /*the studie section styling*/
 .studie-page-content{
@@ -127,6 +143,7 @@ li a:hover, .theme-toggler:hover{
     font-size: 2.5em;
     text-align: center;
     padding: 200px 0px 200px 0px;
+    transition: 300ms;
 }
 .studie-photo{
     grid-column: 1/2;
@@ -144,6 +161,7 @@ li a:hover, .theme-toggler:hover{
     grid-row: 2/3;
     text-align: center;
     font-size: 150%;
+    transition: 300ms;
 }
 .school-photo{
     grid-column: 2/3;
@@ -161,6 +179,7 @@ li a:hover, .theme-toggler:hover{
     grid-row: 2/3;
     text-align: center;
     font-size: 150%;
+    transition: 300ms;
 }
 /*Projects section*/
 .projects-page-content{
@@ -170,6 +189,7 @@ li a:hover, .theme-toggler:hover{
     grid-column-gap: 7%;
     grid-row-gap: 60px;
     padding:60px 7% 60px 7%;
+    transition: 300ms;
 }
 .first-project-photo{
     grid-column: 1/2;
@@ -186,6 +206,7 @@ li a:hover, .theme-toggler:hover{
     grid-row: 2/3;
     text-align: center;
     font-size: 150%;
+    transition: 300ms;
 }
 .second-project-photo{
     grid-column: 2/3;
@@ -202,21 +223,25 @@ li a:hover, .theme-toggler:hover{
     grid-row: 2/3;
     text-align: center;
     font-size: 150%;
+    transition: 300ms;
 }
 #projects h2{
     font-size: 2.5em;
     text-align: center;
     padding: 200px 0px 30px 0px;
+    transition: 300ms;
 }
 #projects p{
     text-align: center;
     font-size: 150%;
+    transition: 300ms;
 }
 /*skills section*/
 #skills h2{
     font-size: 2.5em;
     text-align: center;
     padding: 200px 0px 200px 0px;
+    transition: 300ms;
 }
 .first-grid{
     display: grid;
@@ -241,6 +266,7 @@ li a:hover, .theme-toggler:hover{
     grid-row: 2/3;
     text-align: center;
     font-size: 150%;
+    transition: 300ms;
 }
 .css-logo{
     grid-column: 2/3;
@@ -257,6 +283,7 @@ li a:hover, .theme-toggler:hover{
     grid-row: 2/3;
     text-align: center;
     font-size: 150%;
+    transition: 300ms;
 }
 .bootstrap-logo{
     grid-column: 3/4;
@@ -273,6 +300,7 @@ li a:hover, .theme-toggler:hover{
     grid-row: 2/3;
     text-align: center;
     font-size: 150%;
+    transition: 300ms;
 }
 .second-grid{
     display: grid;
@@ -297,6 +325,7 @@ li a:hover, .theme-toggler:hover{
     grid-row: 2/3;
     text-align: center;
     font-size: 150%;
+    transition: 300ms;
 }
 .javascript-logo{
     grid-column: 2/3;
@@ -313,12 +342,14 @@ li a:hover, .theme-toggler:hover{
     grid-row: 2/3;
     text-align: center;
     font-size: 150%;
+    transition: 300ms;
 }
 /*contact section*/
 #contact h2{
     text-align: center;
     padding:80px 50px 80px 50px;
     font-size: 2.5em;
+    transition: 300ms;
 }
 #contact form{
     display: flex;
@@ -330,6 +361,7 @@ li a:hover, .theme-toggler:hover{
 .name-label{
     padding: 20px 0px 20px 0px;
     font-size: 150%;
+    transition: 300ms;
 }
 .name-input{
     width: 700px;
@@ -339,10 +371,12 @@ li a:hover, .theme-toggler:hover{
     border: none;
     border-radius: 20px;
     box-shadow: 6px 6px 30px rgb(155, 155, 155);
+    transition: 300ms;
 }
 .email-label{
     padding: 20px 0px 20px 0px;
     font-size: 150%;
+    transition: 300ms;
 }
 .email-input{
     width: 700px;
@@ -352,10 +386,12 @@ li a:hover, .theme-toggler:hover{
     border: none;
     border-radius: 20px;
     box-shadow: 6px 6px 30px rgb(150, 150, 150);
+    transition: 300ms;
 }
 .topic-label{
     padding: 20px 0px 20px 0px;
     font-size: 150%;
+    transition: 300ms;
 }
 .textarea{
     width: 1100px;
@@ -386,25 +422,32 @@ li a:hover, .theme-toggler:hover{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1fr;
+    transition: 300ms;
 }
 .fa-envelope{
     grid-column: 1/2;
     grid-row: 1/2;
     text-align: right;
+    transition: 300ms;
 }
 .fa-facebook-square{
     grid-column: 2/3;
     grid-row: 1/2;
     text-align: center;
+    transition: 300ms;
 }
 .fa-whatsapp{
     grid-column: 3/4;
     grid-row: 1/2;
     text-align: left;
+    transition: 300ms;
 }
 i a{
     color: black;
     text-decoration: none;
+}
+.gmail-link,.facbook-link,.phone-num{
+    transition: 300ms;
 }
 /*footer*/
 .footer-bar{
@@ -423,6 +466,7 @@ i a{
     text-align: center;
     padding-top: 10px;
     font-size: 150%;
+    transition: 300ms;
 }
 /*tablet display styling*/
 @media only screen and (max-width:1085px){
@@ -484,23 +528,45 @@ i a{
 /*mobile display styling*/
 @media only screen and (max-width:800px){
     .navbar{
-        height: 350px;
+        height: 550px;
+        transition: 300ms;
     }
     ul{
         padding: 0px;
         margin:20px 130px 0px 50px;
     }
     ul li{
-        padding: 0px;
+        padding: 10px;
+    }
+    .collapsed-list-items{
+        display: none;
+    }
+    .brand-logo{
+        display: inline-block;
+    }
+    .navbar-toggler{
+        display: inline;
+        font-size: 40px;
+        position:relative;
+        left: 45%;
+    }
+    .navbar-toggler:hover{
+        cursor: pointer;
+    }
+    .collapsed-navbar{
+        height: 90px;
     }
     #home h2{
-        padding: 0px;
+        padding: 40px 0px 0px 0px ;
     }
     .home-page-content{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         padding-bottom: 0px;
+    }
+    .brand-logo{
+        display: inline-block;
     }
     .my-photo{
         grid-column: 1/2;
