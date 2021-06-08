@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobilefirst.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -23,7 +23,7 @@
     <span class="navbar-toggler">
       <i class="fa fa-bars" aria-hidden="true"></i>
     </span>
-    <ul>
+    <ul class="">
       <li class="">
         <a href="#home">Home</a>
       </li>
@@ -50,7 +50,7 @@
     <h2>Welkom op mijn website</h2>
     <div class="home-page-content">
       <img class="my-photo" src="img/my-foto.jpg" alt="my photo">
-      <p class="home-section-text">Hi, mijn naam is Allan Hassan, ik ben 23 jaar oud.
+      <p class="home-section-text">Hallo, mijn naam is Allan Hassan, ik ben 23 jaar oud.
         Ik hou van mijn opleiding en ik ben een hele gemotiveerde en enthousiaste leerning. mijn uitdaging is de nieuwe developing technieken te leren kennen en daar mee altijd up to date te zijn.
       </p>
   </section>
@@ -69,12 +69,18 @@
   <!--the projects section-->
   <section id="projects">
     <h2>Mijn projecten</h2>
-    <p>In dit gedeelte presenteer ik mijn projecten</p>
     <div class="projects-page-content">
       <img class="first-project-photo" src="https://cdn.shopify.com/s/files/1/0368/7192/9988/collections/cards1.jpg?v=1589501307" alt="Card game">
       <p class="first-project-p">Deze project heet de Card Game, waaronder twee spelletjes vallen, een higher lower spel en een dobble stenen spel. deze project is uitgevoerd met C# programmer taal. <br> 1-de <a href="https://github.com/ROCMondriaanTIN/sd20-csharp-dice-assignment-Allan-000" target="_blank">link</a>  naar de dobble stenen spel repository. <br> 2- de <a href="https://github.com/Allan-000/Hoger-lager-game" target="_blank">link</a> naar de higer lower repository.</p>
+      
       <img class="second-project-photo" src="img/rekenmachine.jpg" alt="calculator Photo">
-      <p class="second-project-p">mijn andere project is een rekentool die met javascript werkt. <br> <a href="rekentool/index.html" target="_blank">De link naar de rekentool.</a> </p>
+      <p class="second-project-p">Mijn andere project is een rekentool werkend met javascript programeer taal. <br> <a href="rekentool/index.html" target="_blank">De link naar de rekentool.</a> </p>
+      
+      <img class="third-project-photo" src="img/tic-tac-toe.png" alt="Tic tac toe image">
+      <p class="third-project-p">Een beetje pret toevoegen met mijn volgende project. <br>Een <a href="tic-tac-toe-/index.html" target="_blank">tic tac toe </a> spel, volledig werkend met javascript.</p>
+
+      <img class="fourth-project-photo" src="img/buienrader.jpg" alt="Buien rader image">
+      <p class="fourth-project-p">benieuwed hoe het weer is nu ... check mijn buienrader app, ontwikkeld met javascript programeer taal en werkt met de api van <a href="https://www.weatherapi.com/" target="_blank">weaterapi.com</a>.</p>
     </div>
   </section>
   <hr>
@@ -106,19 +112,22 @@
       <label class="email-label">e-mail adress</label>
       <input class="email-input" type="text" max="50">
       <label class="topic-label">Jouw onderwerp / vraag</label>
-      <textarea class="textarea" name="" id="" cols="30" rows="10" maxlength="500"></textarea>
+      <textarea class="textarea" maxlength="500"></textarea>
       <input class="submit" type="submit">
     </form>
     <div class="contact-links">
-      <i style="font-size: 200%;" class=" fa fa-envelope">
+      <span>
+        <i class=" fa fa-envelope"></i>
         <a class="gmail-link" href="#"> alan1998hassan@gmail.com</a>
-      </i>
-      <i style="font-size: 200%;" class=" fa fa-facebook-square">
+      </span>
+      <span>
+        <i class=" fa fa-facebook-square"></i>
         <a class="facebook-link" href="#">Allan Hassan</a>
-      </i>
-      <i style="font-size: 200%;" class=" fa fa-whatsapp">
+      </span>
+      <span>
+        <i class=" fa fa-whatsapp"></i>
         <a class="phone-num" href="#">0685783601</a>
-      </i>
+      </span>
     </div>
   </section>
   <hr>
