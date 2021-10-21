@@ -1,141 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>portfolio</title>
-  <link rel="stylesheet" href="mobilefirst.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!--Jumbotron-->
-  <div class="jumbotron">
-    <div class="box">
-      <h1>Never give up a dream because of the time it will take to accomplish, the time will pass anyway.</h1>
+<!--Jumbotron-->
+    <header>
+        <div class="container-fluid d-flex jumbotron">
+            <div class="container justify-content-center box">
+                <h1 class="text-center ">Never give up a dream because of the time it will take to accomplish, the time will pass anyway.</h1>
+            </div>
+        </div>
+    </header>
+<!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-primary sticky-top">
+    <div class="container">
+        <a class="navbar-brand " href="#"><img class="page-logo" src="./img/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav ms-auto ">
+                <li class="nav-item ">
+                    <a class="nav-link text-light" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#projecten">Projecten</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#vaardigheden">Vaardigheden</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#studie">Studie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <div class="theme-switcher nav-link" >
+                        <label>
+                            <input type="checkbox" class="theme-toggler">
+                            <div class="box-slider"></div>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
-  <!--navbar-->
-  <nav class="navbar ">
-    <span class="website-logo">
-      <img class="brand-logo" src="img/Logo.png" alt="Logo">
-    </span>
-    <span class="navbar-toggler">
-      <i class="fa fa-bars" aria-hidden="true"></i>
-    </span>
-    <ul class="">
-      <li class="">
-        <a href="#home">Home</a>
-      </li>
-      <li class="">
-        <a href="#studie">Studie</a>
-      </li>
-      <li class="">
-        <a href="#projects">Projecten</a>
-      </li>
-      <li class="">
-        <a href="#skills">Vaardigheden</a>
-      </li>
-      <li class="">
-        <a href="#contact">Contact</a>
-      </li>
-      <li class="">
-        <button class="theme-toggler">Change Mode</button>
-      </li>
-    </ul>
-  </nav>
-  <hr>
-  <!--the home section-->
-  <section id="home">
-    <h2>Welkom op mijn website</h2>
-    <div class="home-page-content">
-      <img class="my-photo" src="img/my-foto.jpg" alt="my photo">
-      <p class="home-section-text">Hallo, mijn naam is Allan Hassan, ik ben 23 jaar oud.
-        Ik hou van mijn opleiding en ik ben een hele gemotiveerde en enthousiaste leerning. mijn uitdaging is de nieuwe developing technieken te leren kennen en daar mee altijd up to date te zijn.
-      </p>
-  </section>
-    <hr>
-  <!--the studie section-->
-  <section id="studie">
-    <h2>Studie en School</h2>
-    <div class="studie-page-content">
-      <img class="studie-photo" src="img/software-development-img.jpg" alt="software developer">
-      <p class="studie-text">Ik ben student Software developer en ik vind het een prachtige studie omdat ik hier bij mijn passie en career samen kan brengen. <br> Wil je meer weten over de opleiding ? zoek de <a href="https://www.rocmondriaan.nl/alle-opleidingen/software-developer#opleiding-anchor" target="_blank">website</a>  van de opleiding op.</p>
-      <img class="school-photo" src="img/roc-mondriaan-logo.jpg" alt="ROCmondriaan log">
-      <p class="school-text">ROC mondriaan is een van de grootste opleiders in de regio Haaglanden, meer dan 240 opleidingen en 27 scholen in Den Haag, Leiden, Delft en Naaldwijk. <br>Meer informatie over ROC mondriaan vind je op de <a href="https://www.rocmondriaan.nl/" target="_blank">officiale website</a>.</p>
+</nav>
+<!--home-->
+<section id="home" class="container">
+<h2 class="text-center py-5 themeable-text">Welkom op mijn portfolio</h2>
+    <div class="row py-5">
+        <div class="col-lg-6 col-sm-12">
+            <img class="img-fluid rounded-circle my-photo" src="./img/my-foto.jpg">
+        </div>
+        <div class="col-lg-6 col-sm-12">
+            <h4 class="py-5 themeable-text">Hallo, mijn naam is Allan Hassan, ik ben 23 jaar oud. Ik hou van mijn opleiding en ik ben een hele gemotiveerde en enthousiaste leerning. mijn uitdaging is de nieuwe developing technieken te leren kennen en daar mee altijd up to date te zijn.</h4>
+        </div>
     </div>
-  </section>
-  <hr>
-  <!--the projects section-->
-  <section id="projects">
-    <h2>Mijn projecten</h2>
-    <div class="projects-page-content">
-      <img class="first-project-photo" src="https://cdn.shopify.com/s/files/1/0368/7192/9988/collections/cards1.jpg?v=1589501307" alt="Card game">
-      <p class="first-project-p">Deze project heet de Card Game, waaronder twee spelletjes vallen, een higher lower spel en een dobble stenen spel. deze project is uitgevoerd met C# programmer taal. <br> 1-de <a href="https://github.com/ROCMondriaanTIN/sd20-csharp-dice-assignment-Allan-000" target="_blank">link</a>  naar de dobble stenen spel repository. <br> 2- de <a href="https://github.com/Allan-000/Hoger-lager-game" target="_blank">link</a> naar de higer lower repository.</p>
-      
-      <img class="second-project-photo" src="img/rekenmachine.jpg" alt="calculator Photo">
-      <p class="second-project-p">Mijn andere project is een rekentool werkend met javascript programeer taal. <br> <a href="rekentool/index.html" target="_blank">De link naar de rekentool.</a> </p>
-      
-      <img class="third-project-photo" src="img/tic-tac-toe.png" alt="Tic tac toe image">
-      <p class="third-project-p">Een beetje pret toevoegen met mijn volgende project. <br>Een <a href="tic-tac-toe-/index.html" target="_blank">tic tac toe </a> spel, volledig werkend met javascript.</p>
-
-      <img class="fourth-project-photo" src="img/buienrader.jpg" alt="Buien rader image">
-      <p class="fourth-project-p">benieuwed hoe het weer is nu ... check mijn buienrader app, ontwikkeld met javascript programeer taal en werkt met de api van <a href="https://www.weatherapi.com/" target="_blank">weaterapi.com</a>.<br>De <a href="buienrader/index.html">link </a>naar mijn buienrader.</p>
+</section>
+<hr>
+<!--projecten-->
+<section id="#projecten" class="container">
+    <h2 class="text-center themeable-text">Projecten</h2>
+</section>
+<hr>
+<!--vaardigheden-->
+<section id="vaardigheden" class="container">
+    <h2 class="text-center py-5 themeable-text">vaardigheden</h2>
+    <div class="row py-lg-5">
+        <div class="col-lg-4 d-flex justify-content-center align-items-center flex-column">
+            <img class="project-logo" src="./img/c-sharp-logo.png">
+            <span class="py-3 project-name themeable-text">C#</span>
+        </div>
+        <div class="col-lg-4 d-flex justify-content-center align-items-center flex-column">
+            <img class="project-logo" src="./img/php-logo.png">
+            <span class="py-3 project-name themeable-text">PHP</span>
+        </div>
+        <div class="col-lg-4 d-flex justify-content-center align-items-center flex-column">
+            <img class="project-logo" src="./img/javascript.jpg">
+            <span class="py-3 project-name themeable-text">JavaScript</span>
+        </div>
     </div>
-  </section>
-  <hr>
-  <!--skills section-->
-  <section id="skills">
-    <h2>Vaardigheden</h2>
-    <div class="first-grid">
-      <img src="img/HTML-logo.png" alt="html logo" class="html-logo">
-      <p class="html-p">HTML staat voor hyper text marking language, En daarmee wordt de structuur van een website gemaakt. <br> Het is de basis van elke website die je bezoekt.</p>
-      <img src="img/css-logo.jpg" alt="css logo" class="css-logo">
-      <p class="css-p">CSS staat voor <i>cascing style sheets</i>,<br> en het voegt styling aan een website.</p>
-      <img src="img/bootstrap-logo.jpg" alt="bootstrap logo" class="bootstrap-logo">
-      <p class="bootstrap-p">Bootstrap is een pre-styled combinatie van CSS, HTML en JavaScrpit, die het creëren van websites sneller en eenvoudiger maakt. <br> Het is gemaakt door Twitter en het is tegenwoordig een van de populairste framworks.</p>
+    <div class="row py-lg-5">
+        <div class="col-lg-4 d-flex justify-content-center align-items-center flex-column">
+            <img class="project-logo" src="./img/sql.png">
+            <span class="py-3 project-name themeable-text">SQL</span>
+        </div>
+        <div class="col-lg-4 d-flex justify-content-center align-items-center flex-column">
+            <img class="project-logo" src="./img/bootstrap-logo.jpg">
+            <span class="py-3 project-name themeable-text">bootstrap</span>
+        </div>
+        <div class="col-lg-4 d-flex justify-content-center align-items-center flex-column">
+            <img class="project-logo" src="./img/css-logo.jpg">
+            <span class="py-3 project-name themeable-text">CSS</span>
+        </div>
     </div>
-    <div class="second-grid">
-      <img src="img/c-sharp-logo.png" alt="C-sharp logo" class="c-sharp-logo">
-      <p class="c-sharp-p">C# of C-sharp hoe je het uitspreekt, komt uit C falmilie. <br>Het is een van de populairste object georienteerd programeer talen, en het is de porgrameer taal van Unity games engine.</p>
-      <img src="img/javascript.jpg" alt="Javascript logo" class="javascript-logo">
-      <p class="javascript-p">Javascript is een programeer taal die wordt gebruikt wordt om de websites interactief te maken en webapplicaties te ontwikkelen.</p>
+    <div class="row py-lg-5 ">
+        <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column">
+            <img class="project-logo" src="./img/html-logo.png">
+            <span class="py-3 project-name themeable-text">HTML</span>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column">
+            <img class="project-logo" src="./img/git-logo.png">
+            <span class="py-3 project-name themeable-text">Git</span>
+        </div>
     </div>
-  </section>
-  <hr>
-  <!--Contact sction-->
-  <section id="contact">
-    <h2>Contact</h2>
+</section>
+<hr>
+<!--studie-->
+<section id="studie" class="container">
+    <h2 class="text-center py-5 themeable-text">Studie</h2>
+    <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+            <img class="studie-image img-fluid" src="./img/software-development-img.jpg">
+        </div>
+        <div class="col-12 py-5">
+            <h4 class="text-center py-5 themeable-text">Ik studeer web development bij het ROC mondriaan in den haag, en ik vind het een hele leuke opleiding.</h4>
+        </div>
+    </div>
+</section>
+<hr>
+<!--contact-->
+<section id="contact" class="container">
+    <h2 class="text-center py-5 themeable-text">Contact</h2>
     <form>
-      <label class="name-label">Naam :</label>
-      <input class="name-input" type="text" max="40">
-      <label class="email-label">e-mail adress</label>
-      <input class="email-input" type="text" max="50">
-      <label class="topic-label">Jouw onderwerp / vraag</label>
-      <textarea class="textarea" maxlength="500"></textarea>
-      <input class="submit" type="submit">
+        <label class="name-label themeable-text">Naam :</label>
+        <input class="name-input" type="text" max="40">
+        <label class="email-label themeable-text">e-mail adress</label>
+        <input class="email-input" type="text" max="50">
+        <label class="topic-label themeable-text">Jouw onderwerp / vraag</label>
+        <textarea class="textarea" maxlength="500"></textarea>
+        <input class="btn-primary submit my-5" type="submit">
     </form>
-    <div class="contact-links">
-      <span>
-        <i class=" fa fa-envelope"></i>
-        <a class="gmail-link" href="#"> alan1998hassan@gmail.com</a>
-      </span>
-      <span>
-        <i class=" fa fa-facebook-square"></i>
-        <a class="facebook-link" href="#">Allan Hassan</a>
-      </span>
-      <span>
-        <i class=" fa fa-whatsapp"></i>
-        <a class="phone-num" href="#">0685783601</a>
-      </span>
+</section>
+<hr>
+<!--footer-->
+<footer class="container bg-light text-center text-lg-start mb-3">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright:
+        <a class="text-dark" href="#!">Allan Hassan</a>
     </div>
-  </section>
-  <hr>
-  <script src="script.js"></script>
-</body>
-<footer>
-  <div class="footer-bar">
-    <p>Allan Hassan <i class='fa fa-copyright'></i> 2021</p>
-  </div>
 </footer>
+
+
+<script src="./bootstrap-5.0.2/js/bootstrap.js"></script>
+<script src="index.js"></script>
+</body>
 </html>
